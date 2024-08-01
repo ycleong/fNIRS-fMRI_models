@@ -3,7 +3,7 @@ fNIRS-fMRI Models
 
 ## Overview of Demo Scripts and Model
 
-This reposistory hosts example scripts and data for training and testing a fNIRS-fMRI predictive model as described in Gao et al. (2024). 
+This reposistory hosts example scripts and data for training and testing a fNIRS-fMRI predictive model as described in Gao et al. (2024). Click [here](https://github.com/ycleong/fNIRS-fMRI_models/tree/main) for the data and scripts needed to reproduce analyes from the paper. 
 
 [Demo 1](https://github.com/ycleong/fNIRS-fMRI_models/blob/main/scripts/demo_1.ipynb): Training the model on fNIRS and fMRI participants watching the first half of the first episode of Sherlock
 
