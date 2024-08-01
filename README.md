@@ -3,21 +3,11 @@ fNIRS-fMRI Models
 
 ## Overview of Demo Scripts and Model
 
-This demo script is available as a tool to train and apply our model on
-other datasets. Within this script, we have created a model that is
-trained on fNIRS and fMRI data from the first half of a movie stimulus.
-Following this training, the model is then tested on the fNIRS and fMRI
-data from the second portion of the movie stimulus. This model slightly
-differs from the model utilized in our analysis as we incorporated a
-leave-one-subject-out (LOO) in our original model.
+This reposistory hosts example scripts and data for training and testing a fNIRS-fMRI predictive model as described in Gao et al. (2024). 
 
-For the demo model, we removed the LOO component of the training phase
-in order to get a single model from all of the run 1 data. For the
-testing phase, the model is still tested on the held-out run (run 2) so
-that the model was not tested on data that it had been priorly trained
-on. Maintaining the same subjects in training and testing improves the
-model performance which provides a higher model performance within the
-demo than what is reported in the paper.
+[Demo 1](https://github.com/ycleong/fNIRS-fMRI_models/blob/main/scripts/demo_1.ipynb): Training the model on fNIRS and fMRI participants watching the first half of the first episode of Sherlock
+
+[Demo 2](https://github.com/ycleong/fNIRS-fMRI_models/blob/main/scripts/demo_1.ipynb): Testing the model on fNIRS and fMRI participants watching the second half of the second half of the first episode of Sherlock. Note that here we train and test on the same group of fNIRS participants (watching different stimuli), so accuracy will be inflated. 
 
 ## Instructions for Applying the Model
 
@@ -37,14 +27,3 @@ requirements. Please note that we test on the mean fMRI time courses
 from a separate group, as these are independent samples. If you have
 data from the same subject, this code can be easily adapted to fit the
 model to a subject’s fNIRS and test it on the same subject’s fMRI data.
-
-## Data Format
-
-For the specifics regarding data format, we have created this model to
-take in the fNIRS and fMRI data as a 3D matrix that contains number of
-subjects by timepoint by number of ROIs. For the fMRI data used in this
-model, there should not be any NaNs present within matrices. These NaNs
-can be adjusted for by imputing using the mean, which was a component of
-our initial analysis. On the other hand, the fNIRS data can have NaNs
-present in the matrices. The modeling scripts will impute by taking the
-mean of all other subjects.
