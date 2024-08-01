@@ -7,7 +7,7 @@ This reposistory hosts example scripts and data for training and testing a fNIRS
 
 [Demo 1](https://github.com/ycleong/fNIRS-fMRI_models/blob/main/scripts/demo_1.ipynb): Training the model on fNIRS and fMRI participants watching the first half of the first episode of Sherlock
 
-[Demo 2](https://github.com/ycleong/fNIRS-fMRI_models/blob/main/scripts/demo_1.ipynb): Testing the model on fNIRS and fMRI participants watching the second half of the second half of the first episode of Sherlock. Note that here we train and test on the same group of fNIRS participants (watching different stimuli), so accuracy will be inflated. 
+[Demo 2](https://github.com/ycleong/fNIRS-fMRI_models/blob/main/scripts/demo_1.ipynb): Testing the model on fNIRS and fMRI participants watching the second half of the second half of the first episode of Sherlock. 
 
 ## Instructions for Applying the Model
 
