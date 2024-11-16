@@ -3,7 +3,9 @@ fNIRS-fMRI Models
 
 ## Overview of Demo Scripts and Model
 
-This reposistory hosts example scripts and data for training and testing a fNIRS-fMRI predictive model. A trained version of the model is available: https://github.com/ycleong/fNIRS-fMRI_models/blob/main/models/sherlock_run1model.pickle. We note that the scripts and model in this repository differ slightly from those described in Gao et al. (2024), where the model was trained and tested using a leave-one-participant-out approach, resulting in 29 separate models. In this repository, the model is trained on data from all participants, providing a single model for general use.
+This reposistory hosts example scripts and data for training and testing a fNIRS-fMRI predictive model. A trained version of the model is available: https://github.com/ycleong/fNIRS-fMRI_models/blob/main/models/sherlock_run1model.pickle. 
+
+We note that the scripts and model in this repository differ slightly from those described in Gao et al. (2024), where the model was trained and tested using a leave-one-participant-out approach, resulting in 29 separate models. In this repository, the model is trained on data from all participants, providing a single model for general use.
 
 [Demo 1](https://github.com/ycleong/fNIRS-fMRI_models/blob/main/scripts/demo_1.ipynb): Training the model on fNIRS and fMRI participants watching the first half of the first episode of Sherlock
 
